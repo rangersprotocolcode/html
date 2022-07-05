@@ -58,6 +58,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#verification-nodes-reward">Verification Nodes Reward</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#selection-process">Selection process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#verification-process">Verification process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#how-to-apply-to-become-a-verification-node">How to apply to become a verification node?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
@@ -130,12 +131,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Investors(10%):</span></code> Equal unlock (claim) each day. Token allocation for investors will be fully unlocked within 400 days.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">Core</span> <span class="pre">team</span> <span class="pre">(14%):</span></code> Core developers and maintainers, 8% of the remaining amount is released every 180 days.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Incubators</span> <span class="pre">and</span> <span class="pre">consultants</span> <span class="pre">(7%):</span></code> Incubators and strategic partners, 8% of the remaining amount is released every 180 days.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ecological</span> <span class="pre">community</span> <span class="pre">(49%):</span></code> 8% of the remaining amount is released every 180 days, the ecological community consists of ecological nodes of both Rangers Mainnet and Rangers Connector.<br>Rangers Mainnet Ecological Nodes (35%)
-      <li><p>Rangers Mainnet Ecological Nodes (35%)</p></li>
-    <li><p>Proposal nodes (24.5%): join through RPG-staking election and provide special hardware</p></li>
-    <li><p>Verification nodes (10.5%): stake RPG, and provide required hardware</p></li>
-  <li><p>Rangers Connector Ecological Nodes (14%)</p></li>
-</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ecological</span> <span class="pre">community</span> <span class="pre">(49%):</span></code> 8% of the remaining amount is released every 180 days, the ecological community consists of ecological nodes of both Rangers Mainnet and Rangers Connector.<br>Rangers Mainnet Ecological Nodes (35%): Proposal nodes (24.5%): join through RPG-staking election and provide special hardware. Verification nodes (10.5%): stake RPG, and provide required hardware. <br>Rangers Connector Ecological Nodes (14%)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Ecological</span> <span class="pre">fund</span> <span class="pre">(20%):</span></code> The unused amount is locked, community voting will be held, and relevant announcements made on the foundation website upon use. </p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Treasury</span> <span class="pre">(0%):</span></code> reward and penalty pool, dynamically balanced during operation, the value can be adjusted by community voting. </p></li>
 </ul>
@@ -159,7 +155,8 @@
 </dl>
 <ul class="simple">
 <li><p>Package transactions, generate candidate blocks, and submit to the corresponding verification group</p></li>
-<li><p>To become a proposal node, it needs to stake 1,250 RPG to be qualified as a candidate proposal node. The stake amount will be adjusted according to the development of Rangers Protocol and the improvement of the governance mechanism. It should be noted that RPG cannot be unlocked from staking to block generation and reward allocation. It can only be unlocked until the release of node reward is completed in the designated time. There is only one stake for each node in each allocation period of block generation.</p></li>
+<li><p>It requires staking of 2000 RPG to become qualified as a proposal node. With Rangers Protocol’s development and the governance mechanism’s improvement, RPG’s number staked as proposal nodes will continue to be adjusted. </p></li>
+<li><p>RPG cannot be unlocked during the period from the stake to block reward distribution. It can only be unlocked after the node reward is issued (10 hours). Each node can stake once in each block distribution cycle. When the rewarded proposal node distributes RPG, it will be done according to each node’s RPG stake ratio.</p></li>
 </ul>
 </div>
 <div class="section" id="rewards-of-proposal-node">
@@ -168,9 +165,9 @@
 <dt>The rewards of the proposal node are as follows:</dt><dd></dd>
 </dl>
 <ul class="simple">
-<li><p>After block generation, the proposal group will obtain 35% of total block rewards;</p></li>
-<li><p>The proposal node of block generation will obtain 10.5% of the proposal group’s rewards separately.</p></li>
-<li><p>All the nodes within the proposal group (including block generation node) will share 24.5% of the rest rewards according to the proportion of node staking.</p></li>
+<li><p>After the block is generated, the proposal group will receive 24.5% of the total block rewards.</p></li>
+<li><p>Each block-generating proposal node will get 7.35% of the total block rewards individually.</p></li>
+<li><p>All nodes in the proposal group, including the block-generating one, will share 17.15% of the remaining rewards according to the nodes’ stake ratio.</p></li>
 </ul>
 <div class="line-block">
 <div class="line">The calculation formula is as follow:</div>
@@ -211,7 +208,9 @@
 <li><p>Participate in the creation process of Verification group regularly</p></li>
 <li><p>Validate the candidate block and provide the signature</p></li>
 <li><p>Collect sufficient signatures within the group and restore the group generation signatures</p></li>
-<li><p>To become a verification node, any registered users can apply by staking 400 RPG. There is no restriction on the application of the verification node, as long as the stake can enter the random pool and become the candidate verification node. The generation of Verification nodes still follows the VRF mechanism. RPG cannot be unlocked from stake to block generation allocation. It can only be unlocked within the specified time after node rewards allocation is completed. Each node can only stake once in each block allocation cycle.</p></li>
+<li><p>It requires a minimum staking of 400 RPG to become qualified as a verification node and later a candidate verification node. Rangers Mainnet sets no restriction on the verification node application; a qualified verification node can enter the random pool by staking and then waiting to be selected into a verification group.</p></li>
+<li><p>A candidate verification node (for short, candidate node) can be selected into multiple verification groups simultaneously. The maximum number of verification groups that a candidate node can join is calculated by its staking value divided by 400, rounded down. The more a candidate node stakes, the more verification groups it can join simultaneously.</p></li>  
+<li><p>The generation of Verification nodes still follows the VRF mechanism. RPG cannot be unlocked from stake to block generation allocation. It can only be unlocked within the specified time after node rewards allocation is completed. Each node can only stake once in each block allocation cycle.</p></li>
 </ul>
 </div>
 <div class="section" id="verification-nodes-reward">
@@ -220,8 +219,10 @@
 <dt>The rewards for proposal nodes are as follows:</dt><dd></dd>
 </dl>
 <ul class="simple">
-<li><p>After the block is generated, the verification group will receive 14% of the total block reward;</p></li>
+<li><p>After the block is generated, the verification group will receive 10.5% of the total block reward;</p></li>
 <li><p>All nodes in the verification group will be rewarded according to the proportion of each node’s token stake ratio</p></li>
+<li><p>A verification node can increase its staking at any time and for unlimited times without having to wait till the current distribution cycle concludes.</p></li>
+<li><p>During the period from staking to block reward distribution, RPG cannot be unlocked. It can only be unlocked after the node rewards are issued (10 hours).</p></li>
 </ul>
 <div class="line-block">
 <div class="line">The calculation formula is as follows:</div>
@@ -232,6 +233,21 @@
 </div></blockquote>
 </div>
 </div>
+
+
+<div class="section" id="selection-process">
+<h1>Selection process<a class="headerlink" href="#selection-process" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Rangers Mainnet currently selects 5 to 10 members into a verification group. And the genesis group contains 20 members. The verification group members are randomly selected following the VRF consensus mechanism. Therefore, there exists the possibility for a candidate node not being selected into any verification group.</p></li>
+<li><p>If the current number of awaiting candidate nodes is below 10, as long as they’re in an active-responding status, they would all be selected into the upcoming verification group.</p></li>
+<li><p>If the current number of awaiting candidate nodes is above 10, the father group would randomly select 10 out of them.</p></li>
+<li><p>The possibility for each candidate node to be selected into a verification group is the same regardless of the value staked.</p></li>
+<li><p>The father group starts selecting the next verification group based on a certain block height without having to wait for the latest verification group to be dismissed. The selection for the next verification group will initiate as long as there are plenty of candidate nodes awaiting (a minimum of 5).</p></li>
+<li><p>Candidate nodes that weren’t selected into the latest verification group have the opportunity of joining the upcoming one.</p></li>
+</ul>
+</div>
+
+
 <div class="section" id="verification-process">
 <h1>Verification process<a class="headerlink" href="#verification-process" title="Permalink to this headline"></a></h1>
 <ul class="simple">
@@ -243,6 +259,9 @@
 <li><p>Verify block hash</p></li>
 </ul>
 </div>
+
+
+
 <div class="section" id="how-to-apply-to-become-a-verification-node">
 <h1>How to apply to become a verification node?<a class="headerlink" href="#how-to-apply-to-become-a-verification-node" title="Permalink to this headline"></a></h1>
 <p>For details about how to apply to become a verification node, please refer to：<a class="reference internal" href="rangers-the-specific-process-of-applying-to-become-a-verification-node.html#rangers-process-of-become-a-verification-node"><span class="std std-ref">Specific process for applying to become a verification node</span></a></p>
